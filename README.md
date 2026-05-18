@@ -20,6 +20,8 @@ Use this script **AT YOUR OWN RISK**. We are not responsible for any data loss o
 - Downloads the latest LineageOS build for Switch (Tablet or TV variant).
 - Optionally fetches the matching MindTheGapps ARM64 package.
 - Copies files to an SD card via Hekate UMS.
+- Checks available SD card space before copying files.
+- Supports a custom temporary download directory.
 - Wipes, repartitions, and flashes the eMMC with a custom partition layout.
 - Simple CLI interface with a spinner for background tasks.
 
@@ -53,6 +55,14 @@ The script auto-installs these if missing:
 3. **Run the Script**:
    ```bash
    ./flash_lineageos.sh
+   ```
+   To use a custom temporary download directory:
+   ```bash
+   ./flash_lineageos.sh --tempdir /path/to/temp
+   ```
+   Or:
+   ```bash
+   NX_LOS_TEMP_DIR=/path/to/temp ./flash_lineageos.sh
    ```
 4. **Follow Prompts**:
    - Choose Tablet (1) or TV (2) variant.
@@ -101,7 +111,8 @@ The script auto-installs these if missing:
 - **Permission Denied**: Ensure you ran `chmod +x flash_lineageos.sh` before executing.
 - **API Errors**: Check internet or LineageOS/MindTheGapps servers.
 - **Mount Issues**: Ensure Hekate UMS is active and USB is passed through in VMware.
-- **File Missing**: Verify downloads completed (check `/tmp/lineageos_temp`).
+- **Not Enough SD Space**: Free up space or use a larger SD card before rerunning.
+- **File Missing**: Verify downloads completed in the temp directory printed by the script.
 
 ## Contributing
 Feel free to fork, tweak, and submit pull requests! Report bugs or suggest features via Issues.
