@@ -1,8 +1,8 @@
 # Switchroot-LineageOS-eMMC-Flasher
 
 <div align="center">
-  <a href="https://github.com/sthetix/NX-LOS-eMMC-Flasher">
-    <img src="https://github.com/sthetix/NX-LOS-eMMC-Flasher/blob/main/title.png" alt="NX-LOS-eMMC-Flasher Logo" width="50%">
+  <a href="https://github.com/sthetix/Switchroot-LineageOS-eMMC-Flasher">
+    <img src="https://github.com/sthetix/Switchroot-LineageOS-eMMC-Flasher/blob/main/title.png" alt="Switchroot-LineageOS-eMMC-Flasher Logo" width="50%">
   </a>
 </div>
 
@@ -42,10 +42,10 @@ The script auto-installs these if missing:
 
 ## Usage
 1. **Download the Script**:
-   - Clone this repo or download `flash_lineageos.sh` from the [Releases page](https://github.com/sthetix/NX-LOS-eMMC-Flasher/releases).
+   - Clone this repo or download `flash_lineageos.sh` from the [Releases page](https://github.com/sthetix/Switchroot-LineageOS-eMMC-Flasher/releases).
    ```bash
-   git clone https://github.com/sthetix/NX-LOS-eMMC-Flasher.git
-   cd NX-LOS-eMMC-Flasher
+   git clone https://github.com/sthetix/Switchroot-LineageOS-eMMC-Flasher.git
+   cd Switchroot-LineageOS-eMMC-Flasher
    ```
 2. **Make it Executable**:
    Important: You must set execute permissions before running the script.
