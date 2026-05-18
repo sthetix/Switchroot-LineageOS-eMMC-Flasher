@@ -2,7 +2,7 @@
 
 echo "=== LineageOS eMMC Flash Script ==="
 echo "Requirements: Linux environment, Hekate, SD card, internet."
-echo "Developed by sthetix - Version 1.0.0"
+echo "Developed by sthetix - Version 1.0.1"
 
 usage() {
     echo "Usage: $0 [--tempdir PATH]"
