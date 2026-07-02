@@ -9,7 +9,7 @@ usage() {
     echo "       NX_LOS_TEMP_DIR=/path/to/temp $0"
 }
 
-TEMP_DIR="${NX_LOS_TEMP_DIR:-/tmp/lineageos_temp}"
+TEMP_DIR="${NX_LOS_TEMP_DIR:-/home/chris/lineageos_temp}"
 while [ $# -gt 0 ]; do
     case "$1" in
         --tempdir)
@@ -101,7 +101,7 @@ emmc=1
 EOF
 )
     required_bytes=$((required_bytes + android_ini_size + safety_margin))
-    available_bytes=$(df -PB1 --output=avail "$SD_MOUNT" | tail -n 1 | tr -d ' ')
+    available_bytes=$(df -B1 --output=avail "$SD_MOUNT" | tail -n 1 | tr -d ' ')
 
     if [ -z "$available_bytes" ]; then
         echo "Error: Failed to check free space on SD card."
